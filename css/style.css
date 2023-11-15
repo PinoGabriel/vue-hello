@@ -9,3 +9,24 @@ body {
     background-color: #222;
     color: white;
 }
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.red {
+    color: red;
+}
+.blue {
+    color: blue;
+}
+.violet {
+    color: violet;
+}
+
+.py-3 {
+    padding: 25px 0;
+}

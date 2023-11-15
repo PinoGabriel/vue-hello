@@ -7,8 +7,16 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div id="app">
-        <h1> {{ message }} </h1>
+    <div id="app" class="container">
+        <h1 v-bind:class="classColor"> {{ message }} </h1>
+        <img :src="image" alt="" class="py-3">
+        <div>
+            <input v-model="classColor">
+            <button @click="btnClick">clicca per cambiare colore</button>
+        </div>
+
+        <h3 class="py-3">Scrivi all'interno dell'input un colore tra: <span class="red">red</span>, <span class="blue">blue</span> o <span class="violet">violet</span> per cambiare il colore del titolo</h3>
+        
     </div>
 
 
@@ -16,3 +24,27 @@
     <script src="./js/main.js"></script>
 </body>
 </html>
+
+
+
+<!------------------------------- Inizio Appunti --------------------------------->
+
+<!-- 
+    dopo il "v-bind" ci vogliono i :
+il v-bind si mette solo prima delle classi, id, src... eccc tutti elementi che hanno dentro un contenuto tra ""
+
+l'elemento ottenuto dal return di VUE su JS bisogna inserirlo dentro il testo con {{ nomeElemento }}
+Mentre dopo il v-bind l'elemento da inserire NON andrà messo con le {{}}, ma andra inserito come se fosse una classe normale quindi: "testo"
+
+
+l'elemento v-bind può anche essere sottointeso, esempio:
+
+v-bind:src="testo"   può essere modificato con
+
+:src="testo"
+
+Quindi non si inserisce più la forma v-bind ma si mettono soltanto i : 
+-->
+
+
+<!------------------------------- Fine Appunti --------------------------------->
