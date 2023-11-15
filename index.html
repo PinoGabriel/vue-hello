@@ -8,14 +8,14 @@
 </head>
 <body>
     <div id="app" class="container">
-        <h1 v-bind:class="classColor"> {{ message }} </h1>
+        <h1 v-bind:class="classColor"> <span class="white">Benvenuto,</span> {{ name }} {{surname}} </h1>
         <img :src="image" alt="" class="py-3">
         <div>
             <input v-model="classColor">
-            <button @click="btnClick">clicca per cambiare colore</button>
+            <button @click="btnClick">clicca per mettere il colore blu</button>
         </div>
 
-        <h3 class="py-3">Scrivi all'interno dell'input un colore tra: <span class="red">red</span>, <span class="blue">blue</span> o <span class="violet">violet</span> per cambiare il colore del titolo</h3>
+        <h3 class="py-3">Scrivi all'interno dell'input un colore tra: <span class="red">red</span>, <span class="blue">blue</span> o <span class="violet">violet</span> per cambiare il colore del tuo nome</h3>
         
     </div>
 
